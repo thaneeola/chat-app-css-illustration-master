@@ -34,12 +34,9 @@ body {
   padding: 50px;
 }
 .bg-color {
-  background-image: linear-gradient(
-    to bottom,
-    var(--Light-Magenta),
-    var(--Light-Violet)
-  );
-  height: 400px;
+  background-color: var(--Light-Violet);
+   
+  height: 500px;
   width: 40%;
   border-bottom-right-radius: 300px;
 }
@@ -204,6 +201,7 @@ p {
 #text {
   border: none;
   padding: 8px;
+  border-radius: 50px;
   width: 100%;
 }
 
@@ -220,48 +218,91 @@ p {
   font-size: 10px;
 }
 .send {
-  /* margin-left:120px ; */
+  margin-left:110px ;
   background-color: var(--Very-Dark-Desaturated-submit-button-background);
-  padding: 8px;
-  border-radius: 10px;
+  width: 20px;
+  margin-top: -3px;
+  height: 20px;
+  padding: auto;
+  border-radius: 50%;
+  position: relative;
+}
+.arrow-right{
+  position: absolute;
+  top: 5px;
+  left: 4px;
 }
 h1 {
-  font-size:30px;
+  font-size: 30px;
   margin-bottom: 30px;
   margin-top: 120px;
   font-weight: 400px;
   color: var(--Very-Dark-Desaturated-Violet-main-heading);
-  
+
   /* text-align: center; */
 }
-.texts{
- 
+.texts {
   width: 310px;
   margin: auto;
- 
-  /* text-align: center; */
+
+  text-align: center;
 }
 .texts p {
   font-size: 20px;
   padding-bottom: 120px;
   color: var(--Dark-Violet-chat-right);
-font-weight: 400;
-line-height: 30px;
+  font-weight: 400;
+  line-height: 30px;
 }
-@media screen and (min-width:900px){
-  .texts{
- 
+@media screen and (min-width: 900px) {
+  .texts {
     width: 500px;
-    margin-top:-400px ;
+    margin-top: -400px;
     margin-left: 500px;
-    
-   
+    text-align: start;
   }
 
   .bg-color {
- 
     height: 400px;
     width: 30%;
     border-bottom-right-radius: 300px;
   }
 }
+@media screen and (min-width: 715px) {
+  .texts {
+
+    margin-top: -400px;
+    margin-left: 400px;
+  }
+
+  .bg-color {
+    height: 400px;
+    width: 30%;
+    border-bottom-right-radius: 300px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .texts {
+    width: 500px;
+    margin-top: -600px;
+    margin-left: 700px;
+    /* text-align: start; */
+  }
+  .mobile {
+  
+  
+    width: 260px;
+    top: 70px;
+    left: 350px;
+  
+    
+  }
+  .bg-color {
+
+    height: 600px;
+    /* width: 40%; */
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 300px;
+  }
+}
+

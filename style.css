@@ -24,7 +24,7 @@ body {
 .wrapper {
   /* position: relative; */
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   font-family: "Rubik", sans-serif;
   color: var(--White);
   background-color: var(--Light-Grayish-Violet);
